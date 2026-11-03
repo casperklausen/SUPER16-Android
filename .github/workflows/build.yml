@@ -22,6 +22,9 @@ jobs:
       - name: Configura Android
         uses: android-actions/setup-android@v3
 
+      - name: Accetta license Android
+        run: yes | sdkmanager --licenses
+
       - name: Installa Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
